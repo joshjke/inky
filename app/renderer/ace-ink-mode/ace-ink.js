@@ -456,6 +456,61 @@ var inkHighlightRules = function() {
             }]
         }],
         "#tags": [{
+            regex: /#[^\[\]$]+/,
+            token: [
+                "command", // optional space
+                "command.slash",  // /
+                "command", // optional space
+                "command"   // command_name
+            ],
+            push: [{
+                token: "command",
+                regex: /#[^\[\]$]+/,
+                //regex: /$/,
+                next: "pop"
+            }, {
+                regex: /(s+)(w+)/,
+                token: [
+                    "command",
+                    "command.option"
+                ]
+            }, {
+                include: "#escapes"
+            }, {
+                include: "#comments"
+            }, { 
+                include: "#inlineContent" 
+            }, {
+                defaultToken: "command"
+            }]
+        }],
+        "#tagsInsert": [{
+            //regex: /(\/)(\s*)(\w+)/,
+            regex: /#[^\[\]$]+/,
+            token: [
+                "command.slash",  // /
+                "command", // optional space
+                "command.name"   // command_name
+            ],
+            push: [{
+                token: "command",
+                regex: /#[^\[\]$]+/,
+                next: "pop"
+            }, {
+                regex: /(s+)(w+)/,
+                token: [
+                    "command",
+                    "command.option"
+                ]
+            }, {
+                include: "#escapes"
+            }, {
+                include: "#comments"
+            }, {
+                defaultToken: "command"
+            }]
+        }],
+        /*"#tags": [{
             // e.g. #tag should be highlighted
             token: "tag",
 
@@ -476,7 +531,7 @@ var inkHighlightRules = function() {
             // of a line unless they're in a choice, in which case we
             // stop parsing the tag at "[" or "]".
             regex: /#[^\[\]$]+/
-        }],
+        }],*/
         "#inlineContent": [{ 
             include: "#inlineConditional"
         }, {
@@ -518,6 +573,8 @@ var inkHighlightRules = function() {
             include: "#endOfSection"
         }, {
             include: "#logicLine"
+        }, {
+            include: "#commandLine"
         }, {
             include: "#mixedContent"
         }, {

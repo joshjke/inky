@@ -23,6 +23,10 @@ function getAllVocabWords(files) {
     return union(files.map((file) => file.symbols.getCachedVocabWords()));
 }
 
+function getAllCommandWords(files) {
+    return union(files.map((file) => file.symbols.getCachedCommandWords()));
+}
+
 // Helper function that generates suggestions for all the divert targets
 function getAllDivertTargetSuggestions(inkFiles) {
     const targets = getAllDivertTargets(inkFiles);
@@ -36,6 +40,10 @@ function getAllDivertTargetSuggestions(inkFiles) {
     }
     return suggestions;
 }
+
+
+
+
 
 // Helper function that generates suggestions for all the variables
 function getAllVariableSuggestions(inkFiles) {
@@ -83,6 +91,7 @@ exports.inkCompleter = {
         const isCursorInFlow = (cursorToken.type.indexOf("flow") != -1);
         const isCursorInLabel = (cursorToken.type.indexOf(".label") != -1);
         const isCursorInLogic = (cursorToken.type.indexOf("logic") != -1);
+        const isCursorInCommand = (cursorToken.type.indexOf("command") != -1);
 
         // Ignore the prefix. ACE will find the most likely words in the list
         // for the prefix automatically.
@@ -96,6 +105,8 @@ exports.inkCompleter = {
             const vocabSuggestions = getAllVocabSuggestions(this.inkFiles);
             suggestions = divertTargetSuggestions.concat(variableSuggestions).
                     concat(vocabSuggestions);
+        } else if ( isCursorInCommand ) {
+            suggestions = getAllCommandSuggestions(this.inkFiles);
         } else {
             suggestions = getAllVocabSuggestions(this.inkFiles);
         }
@@ -103,3 +114,134 @@ exports.inkCompleter = {
         callback(null, suggestions);
     }
 };
+
+
+// Helper function that generates suggestions for all the commands
+function getAllCommandSuggestions(inkFiles) {
+    const suggestions = [];
+
+    /*const commandWords = getAllCommandWords(inkFiles);
+    for (const commandWord of commandWords) {
+        suggestions.push({
+            caption: commandWord,
+            value: commandWord,
+            meta: "Command",
+        });
+    }*/
+    
+    suggestions.push({
+        caption: "character",
+            value: "character",
+            meta: "Command",
+    },{
+        caption: "charlie",
+            value: "charlie",
+            meta: "Command",
+    },{
+        caption: "riley",
+            value: "riley",
+            meta: "Command",
+    },{
+        caption: "alex",
+            value: "alex",
+            meta: "Command",
+    },{
+        caption: "on_destination ( DESTINATION_HERE )",
+            value: "on_destination ( DESTINATION_HERE )",
+            meta: "Command",
+    },{
+        caption: "",
+            value: "",
+            meta: "Command",
+            
+        },{
+        caption: "_walk",
+            value: "_walk",
+            meta: "Command",
+        },{
+        caption: "_run",
+            value: "_run",
+            meta: "Command",
+            },{
+        caption: "_run1",
+            value: "_run1",
+            meta: "Command",
+            },{
+        caption: "_run2",
+            value: "_run2",
+            meta: "Command",
+            },{
+        caption: "_run3",
+            value: "_run3",
+            meta: "Command",
+            },{
+        caption: "_run4",
+            value: "_run4",
+            meta: "Command",
+            },{
+        caption: "_run5",
+            value: "_run5",
+            meta: "Command",
+            },{
+        caption: "_run6",
+            value: "_run6",
+            meta: "Command",
+            },{
+        caption: "_run7",
+            value: "_run7",
+            meta: "Command",
+                    },{
+        caption: "_run8",
+            value: "_run8",
+            meta: "Command",
+    
+            },{
+        caption: "_run9",
+            value: "_run9",
+            meta: "Command",
+    
+            },{
+        caption: "_run10",
+            value: "_run10",
+            meta: "Command",
+    
+            },{
+        caption: "_run11",
+            value: "_run11",
+            meta: "Command",
+    
+            },{
+        caption: "_run12",
+            value: "_run12",
+            meta: "Command",
+    
+            },{
+        caption: "_run13",
+            value: "_run13",
+            meta: "Command",
+    
+            },{
+        caption: "_run14",
+            value: "_run14",
+            meta: "Command",
+    
+            },{
+        caption: "_run15",
+            value: "_run15",
+            meta: "Command",
+    
+            },{
+        caption: "_run16",
+            value: "_run16",
+            meta: "Command",
+    
+            },{
+        caption: "_run17",
+            value: "_run17",
+            meta: "Command",
+    
+    
+    });
+    
+    return suggestions;
+}
