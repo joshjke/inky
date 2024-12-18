@@ -239,9 +239,134 @@ function getAllCommandSuggestions(inkFiles) {
         caption: "_run17",
             value: "_run17",
             meta: "Command",
+            },{
+        caption: "sfx stop SFX_NAME}",
+            value: "sfx stop SFX_NAME}",
+            meta: "Command",
+        },
+        {
+        caption: "help sfx stop SFX_NAME} - Stop a specific sound",
+            value: "help sfx stop SFX_NAME} - Stop a specific sound",
+            meta: "Command",
+        },
+        {
+        caption: "time_of_day {time_of_day}",
+            value: "time_of_day {time_of_day}",
+            meta: "Command",
+        },
+        {
+        caption: "help time_of_day {time_of_day} - Sets the time of day. Affects lighting. morning, noon, afternooon, evening, night",
+            value: "help time_of_day {time_of_day} - Sets the time of day. Affects lighting. morning, noon, afternooon, evening, night",
+            meta: "Command",
+        },
+        {
+        caption: "c_alex",
+            value: "c_alex",
+            meta: "Character",
+        },{
+        caption: "c_alex_dream",
+            value: "c_alex_dream",
+            meta: "Character",
+        },{
+        caption: "c_bria",
+            value: "c_bria",
+            meta: "Character",
+        },{
+        caption: "c_brownie",
+            value: "c_brownie",
+            meta: "Character",
+        },{
+        caption: "c_bunman",
+            value: "c_bunman",
+            meta: "Character",
+        },{
+        caption: "c_charlie",
+            value: "c_charlie",
+            meta: "Character",
+        },{
+        caption: "c_charlie_dream",
+            value: "c_charlie_dream",
+            meta: "Character",
+        },{
+        caption: "c_clovis",
+            value: "c_clovis",
+            meta: "Character",
+        },{
+        caption: "c_connor",
+            value: "c_connor",
+            meta: "Character",
+        },{
+        caption: "c_dad",
+            value: "c_dad",
+            meta: "Character",
+        },{
+        caption: "c_dustin",
+            value: "c_dustin",
+            meta: "Character",
+        },{
+        caption: "c_eliana",
+            value: "c_eliana",
+            meta: "Character",
+        },{
+        caption: "c_erika",
+            value: "c_erika",
+            meta: "Character",
+        },{
+        caption: "c_jason",
+            value: "c_jason",
+            meta: "Character",
+        },{
+        caption: "c_juliette",
+            value: "c_juliette",
+            meta: "Character",
+        },{
+        caption: "c_kaden",
+            value: "c_kaden",
+            meta: "Character",
+        },{
+        caption: "c_klarissa",
+            value: "c_klarissa",
+            meta: "Character",
+        },{
+        caption: "c_lee",
+            value: "c_lee",
+            meta: "Character",
+        },{
+        caption: "c_logan",
+            value: "c_logan",
+            meta: "Character",
+        },{
+        caption: "c_mason",
+            value: "c_mason",
+            meta: "Character",
+        },{
+        caption: "c_mom",
+            value: "c_mom",
+            meta: "Character",
+        },{
+        caption: "c_nicole",
+            value: "c_nicole",
+            meta: "Character",
+        },{
+        caption: "c_riley",
+            value: "c_riley",
+            meta: "Character",
+        },{
+        caption: "c_riley_dream",
+            value: "c_riley_dream",
+            meta: "Character",
+        },{
+        caption: "c_sammy",
+            value: "c_sammy",
+            meta: "Character",
+        },{
+        caption: "c_sky",
+            value: "c_sky",
+            meta: "Character",
+        },
+
     
-    
-    });
+    );
     
     return suggestions;
 }
