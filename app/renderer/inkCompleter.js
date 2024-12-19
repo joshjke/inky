@@ -154,13 +154,425 @@ function getAllCommandSuggestions(inkFiles) {
     },
 
 
-    {
+{
+        caption: "add_star CHARACTER_NAME",
+            value: "add_star CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "advance",
+            value: "advance",
+            meta: "Command",
+        },{
+        caption: "background fade_in FADE_TIME",
+            value: "background fade_in FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "background fade_to_white FADE_TIME",
+            value: "background fade_to_white FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "background fade_to_black FADE_TIME",
+            value: "background fade_to_black FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "background set BACKGROUND_NAME",
+            value: "background set BACKGROUND_NAME",
+            meta: "Command",
+        },{
+        caption: "block movement",
+            value: "block movement",
+            meta: "Command",
+        },{
+        caption: "brick_add_loaded_brick",
+            value: "brick_add_loaded_brick",
+            meta: "Command",
+        },{
+        caption: "brick_add BRICK_NAME",
+            value: "brick_add BRICK_NAME",
+            meta: "Command",
+        },{
+        caption: "stage_sword",
+            value: "stage_sword",
+            meta: "Command",
+        },{
+        caption: "camera battle focus TARGET_NAME",
+            value: "camera battle focus TARGET_NAME",
+            meta: "Command",
+        },{
+        caption: "camera_battle_size PERCENTAGE",
+            value: "camera_battle_size PERCENTAGE",
+            meta: "Command",
+        },{
+        caption: "camera_bounds_block",
+            value: "camera_bounds_block",
+            meta: "Command",
+        },{
+        caption: "camera_bounds_unblock",
+            value: "camera_bounds_unblock",
+            meta: "Command",
+        },{
+        caption: "camera resize speed default",
+            value: "camera resize speed default",
+            meta: "Command",
+        },{
+        caption: "camera resize speed SPEED_VALUE",
+            value: "camera resize speed SPEED_VALUE",
+            meta: "Command",
+        },{
+        caption: "camera chase_speed default",
+            value: "camera chase_speed default",
+            meta: "Command",
+        },{
+        caption: "camera chase_speed SPEED_VALUE",
+            value: "camera chase_speed SPEED_VALUE",
+            meta: "Command",
+        },{
+        caption: "camera focus2 TARGET1 TARGET2",
+            value: "camera focus2 TARGET1 TARGET2",
+            meta: "Command",
+        },{
+        caption: "camera focus TARGET_NAME",
+            value: "camera focus TARGET_NAME",
+            meta: "Command",
+        },{
+        caption: "camera offset X_VALUE Y_VALUE",
+            value: "camera offset X_VALUE Y_VALUE",
+            meta: "Command",
+        },{
+        caption: "camera shake",
+            value: "camera shake",
+            meta: "Command",
+        },{
+        caption: "camera teleport LOCATION_NAME",
+            value: "camera teleport LOCATION_NAME",
+            meta: "Command",
+        },{
+        caption: "camera zoom ZOOM_VALUE",
+            value: "camera zoom ZOOM_VALUE",
+            meta: "Command",
+        },{
+        caption: "character",
+            value: "character",
+            meta: "Command",
+        },{
+        caption: "classroom seats assigned",
+            value: "classroom seats assigned",
+            meta: "Command",
+        },{
+        caption: "drawing DRAWING_SPOT_KEY load TEXTURE_KEY",
+            value: "drawing DRAWING_SPOT_KEY load TEXTURE_KEY",
+            meta: "Command",
+        },{
+        caption: "draw DRAWING_SPOT_KEY TEXTURE_KEY",
+            value: "draw DRAWING_SPOT_KEY TEXTURE_KEY",
+            meta: "Command",
+        },{
+        caption: "battle_background_set BACKGROUND_NAME",
+            value: "battle_background_set BACKGROUND_NAME",
+            meta: "Command",
+        },{
+        caption: "start_battle ENCOUNTER_NAME",
+            value: "start_battle ENCOUNTER_NAME",
+            meta: "Command",
+        },{
+        caption: "restart_battle",
+            value: "restart_battle",
+            meta: "Command",
+        },{
+        caption: "status_remove CHARACTER_NAME STATUS_NAME",
+            value: "status_remove CHARACTER_NAME STATUS_NAME",
+            meta: "Command",
+        },{
+        caption: "status_add CHARACTER_NAME STATUS_NAME",
+            value: "status_add CHARACTER_NAME STATUS_NAME",
+            meta: "Command",
+        },{
+        caption: "combat_attack CHARACTER_NAME attack TARGET_NAME with MOVE_NAME",
+            value: "combat_attack CHARACTER_NAME attack TARGET_NAME with MOVE_NAME",
+            meta: "Command",
+        },{
+        caption: "has_gone CHARACTER_NAME HAS_GONE",
+            value: "has_gone CHARACTER_NAME HAS_GONE",
+            meta: "Command",
+        },{
+        caption: "player_turn",
+            value: "player_turn",
+            meta: "Command",
+        },{
+        caption: "combat_remove_all_listeners",
+            value: "combat_remove_all_listeners",
+            meta: "Command",
+        },{
+        caption: "on_enemy_turn_start ENEMY_NAME TRIGGER",
+            value: "on_enemy_turn_start ENEMY_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_character_turn_end CHARACTER_NAME TRIGGER",
+            value: "on_character_turn_end CHARACTER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_action_fail PLAYER_NAME TRIGGER",
+            value: "on_player_action_fail PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_action_success PLAYER_NAME TRIGGER",
+            value: "on_player_action_success PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_attack PLAYER_NAME TRIGGER",
+            value: "on_player_attack PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_block_fail PLAYER_NAME TRIGGER",
+            value: "on_player_block_fail PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_block_success PLAYER_NAME TRIGGER",
+            value: "on_player_block_success PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_turn_start PLAYER_NAME TRIGGER",
+            value: "on_player_turn_start PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_turn_end TRIGGER",
+            value: "on_player_turn_end TRIGGER",
+            meta: "Command",
+        },{
+        caption: "on_player_moved PLAYER_NAME TRIGGER",
+            value: "on_player_moved PLAYER_NAME TRIGGER",
+            meta: "Command",
+        },{
+        caption: "combat_pause",
+            value: "combat_pause",
+            meta: "Command",
+        },{
+        caption: "disable_move CHARACTER_NAME MOVE_NAME",
+            value: "disable_move CHARACTER_NAME MOVE_NAME",
+            meta: "Command",
+        },{
+        caption: "disable_all_moves CHARACTER_NAME",
+            value: "disable_all_moves CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "enable_move CHARACTER_NAME MOVE_NAME",
+            value: "enable_move CHARACTER_NAME MOVE_NAME",
+            meta: "Command",
+        },{
+        caption: "enable_all_moves CHARACTER_NAME",
+            value: "enable_all_moves CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "cut_dialog",
+            value: "cut_dialog",
+            meta: "Command",
+        },{
+        caption: "day_choices DAY_NUMBER",
+            value: "day_choices DAY_NUMBER",
+            meta: "Command",
+        },{
+        caption: "show_deadline",
+            value: "show_deadline",
+            meta: "Command",
+        },{
+        caption: "hide_deadline",
+            value: "hide_deadline",
+            meta: "Command",
+        },{
+        caption: "debug COMMAND",
+            value: "debug COMMAND",
+            meta: "Command",
+        },{
+        caption: "continue",
+            value: "continue",
+            meta: "Command",
+        },{
+        caption: "start_scene SCENE_NAME",
+            value: "start_scene SCENE_NAME",
+            meta: "Command",
+        },{
+        caption: "delay",
+            value: "delay",
+            meta: "Command",
+        },{
+        caption: "drive_into_dreamworld",
+            value: "drive_into_dreamworld",
+            meta: "Command",
+        },{
+        caption: "fmod_var VAR_NAME VALUE",
+            value: "fmod_var VAR_NAME VALUE",
+            meta: "Command",
+        },{
+        caption: "friend_link FRIEND_NAME LEVEL_NUM",
+            value: "friend_link FRIEND_NAME LEVEL_NUM",
+            meta: "Command",
+        },{
+        caption: "flag FLAG_NAME set VALUE",
+            value: "flag FLAG_NAME set VALUE",
+            meta: "Command",
+        },{
+        caption: "game_speed_set GAME_SPEED",
+            value: "game_speed_set GAME_SPEED",
+            meta: "Command",
+        },{
+        caption: "player_input KEY PROMPT",
+            value: "player_input KEY PROMPT",
+            meta: "Command",
+        },{
+        caption: "hide_all_speech_bubbles",
+            value: "hide_all_speech_bubbles",
+            meta: "Command",
+        },{
+        caption: "show_all_speech_bubbles",
+            value: "show_all_speech_bubbles",
+            meta: "Command",
+        },{
+        caption: "icon_update",
+            value: "icon_update",
+            meta: "Command",
+        },{
+        caption: "interactable_set INTERACTABLE_NAME ON/OFF",
+            value: "interactable_set INTERACTABLE_NAME ON/OFF",
+            meta: "Command",
+        },{
+        caption: "item ITEM_NAME position LOCATION_NAME",
+            value: "item ITEM_NAME position LOCATION_NAME",
+            meta: "Command",
+        },{
+        caption: "light_off",
+            value: "light_off",
+            meta: "Command",
+        },{
+        caption: "load_slots",
+            value: "load_slots",
+            meta: "Command",
+        },{
+        caption: "load_slots_loss",
+            value: "load_slots_loss",
+            meta: "Command",
+        },{
+        caption: "load_shadow_save SHADOW_SLOT_NUM",
+            value: "load_shadow_save SHADOW_SLOT_NUM",
+            meta: "Command",
+        },{
+        caption: "save_shadow_save SHADOW_SLOT_NUM",
+            value: "save_shadow_save SHADOW_SLOT_NUM",
+            meta: "Command",
+        },{
+        caption: "location LOCATION_NAME",
+            value: "location LOCATION_NAME",
+            meta: "Command",
+        },{
+        caption: "add_friend_links",
+            value: "add_friend_links",
+            meta: "Command",
+        },{
+        caption: "add_party_stats",
+            value: "add_party_stats",
+            meta: "Command",
+        },{
+        caption: "add_plastiks",
+            value: "add_plastiks",
+            meta: "Command",
+        },{
+        caption: "add_settings",
+            value: "add_settings",
+            meta: "Command",
+        },{
+        caption: "music stop",
+            value: "music stop",
+            meta: "Command",
+        },{
+        caption: "music fade_out FADE_TIME",
+            value: "music fade_out FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "music fade_in SONG_NAME FADE_TIME",
+            value: "music fade_in SONG_NAME FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "music loop ON/OFF",
+            value: "music loop ON/OFF",
+            meta: "Command",
+        },{
+        caption: "music SONG_NAME1 FADE_TIME",
+            value: "music SONG_NAME1 FADE_TIME",
+            meta: "Command",
+        },{
+        caption: "music SONG_NAME",
+            value: "music SONG_NAME",
+            meta: "Command",
+        },{
+        caption: "object OBJECT_NAME set_dialog SCENE_NAME",
+            value: "object OBJECT_NAME set_dialog SCENE_NAME",
+            meta: "Command",
+        },{
+        caption: "party_member_add CHARACTER_NAME",
+            value: "party_member_add CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "party_member_remove CHARACTER_NAME",
+            value: "party_member_remove CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "pause PAUSE_TIME",
+            value: "pause PAUSE_TIME",
+            meta: "Command",
+        },{
+        caption: "disable_pause",
+            value: "disable_pause",
+            meta: "Command",
+        },{
+        caption: "enable_pause",
+            value: "enable_pause",
+            meta: "Command",
+        },{
+        caption: "talker_block_closing",
+            value: "talker_block_closing",
+            meta: "Command",
+        },{
+        caption: "remove KEY",
+            value: "remove KEY",
+            meta: "Command",
+        },{
+        caption: "remove_star CHARACTER_NAME",
+            value: "remove_star CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "save_slots",
+            value: "save_slots",
+            meta: "Command",
+        },{
         caption: "sfx stop SFX_NAME",
             value: "sfx stop SFX_NAME",
             meta: "Command",
         },{
         caption: "help sfx stop SFX_NAME - Stop a specific sound",
             value: "help sfx stop SFX_NAME - Stop a specific sound",
+            meta: "Command",
+        },{
+        caption: "sfx loop SFX_NAME ON/OFF",
+            value: "sfx loop SFX_NAME ON/OFF",
+            meta: "Command",
+        },{
+        caption: "sfx SFX_NAME",
+            value: "sfx SFX_NAME",
+            meta: "Command",
+        },{
+        caption: "start_day DAY_NUMBER",
+            value: "start_day DAY_NUMBER",
+            meta: "Command",
+        },{
+        caption: "start_next_day",
+            value: "start_next_day",
+            meta: "Command",
+        },{
+        caption: "sword_builder_on_confirm",
+            value: "sword_builder_on_confirm",
+            meta: "Command",
+        },{
+        caption: "show_sword_builder",
+            value: "show_sword_builder",
             meta: "Command",
         },{
         caption: "time_of_day TIME_OF_DAY",
@@ -170,32 +582,219 @@ function getAllCommandSuggestions(inkFiles) {
         caption: "help time_of_day TIME_OF_DAY - Sets the time of day. Affects lighting. morning, noon, afternooon, evening, night",
             value: "help time_of_day TIME_OF_DAY - Sets the time of day. Affects lighting. morning, noon, afternooon, evening, night",
             meta: "Command",
+        },{
+        caption: "titlescreen",
+            value: "titlescreen",
+            meta: "Command",
+        },{
+        caption: "move_unlock CHARACTER_NAME",
+            value: "move_unlock CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "move_remove CHARACTER_NAME",
+            value: "move_remove CHARACTER_NAME",
+            meta: "Command",
+        },{
+        caption: "unlock_args NAME ARGUMENT_COUNT",
+            value: "unlock_args NAME ARGUMENT_COUNT",
+            meta: "Command",
+        },{
+        caption: "unlock NAME",
+            value: "unlock NAME",
+            meta: "Command",
+        },{
+        caption: "unblock",
+            value: "unblock",
+            meta: "Command",
+        },{
+        caption: "unpause",
+            value: "unpause",
+            meta: "Command",
+        },{
+        caption: "vfx VFX_NAME",
+            value: "vfx VFX_NAME",
+            meta: "Command",
+        },{
+        caption: "start_walk_and_talk",
+            value: "start_walk_and_talk",
+            meta: "Command",
         },
+
+
+
 
 
         // Character Commands
 
-        {
-        caption: "character c_name anim_layer_weight LAYER_NAME WEIGHT",
-            value: "character c_name anim_layer_weight LAYER_NAME WEIGHT",
+
+
+{
+        caption: "character CHARACTER_NAME anim_layer_weight LAYER_NAME WEIGHT",
+            value: "character CHARACTER_NAME anim_layer_weight LAYER_NAME WEIGHT",
             meta: "Character Command",
         },{
-        caption: "character c_name ai_control",
-            value: "character c_name ai_control",
+        caption: "character CHARACTER_NAME ai_control",
+            value: "character CHARACTER_NAME ai_control",
             meta: "Character Command",
         },{
-        caption: "character c_name control",
-            value: "character c_name control",
+        caption: "character CHARACTER_NAME control",
+            value: "character CHARACTER_NAME control",
             meta: "Character Command",
         },{
-        caption: "character c_name set_dialog SCENE_NAME",
-            value: "character c_name set_dialog SCENE_NAME",
+        caption: "character CHARACTER_NAME set_dialog SCENE_NAME",
+            value: "character CHARACTER_NAME set_dialog SCENE_NAME",
             meta: "Character Command",
         },{
-        caption: "character c_name emote e_",
-            value: "character c_name emote e_",
+        caption: "help character CHARACTER_NAME set_dialog SCENE_NAME - sets the character's dialog when they are talked to",
+            value: "help character CHARACTER_NAME set_dialog SCENE_NAME - sets the character's dialog when they are talked to",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME emote_set EMOTE_NAME IS_ACTIVE",
+            value: "character CHARACTER_NAME emote_set EMOTE_NAME IS_ACTIVE",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME emote e_",
+            value: "character CHARACTER_NAME emote e_",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME interact exit",
+            value: "character CHARACTER_NAME interact exit",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME interact_immediate LOCATION_NAME",
+            value: "character CHARACTER_NAME interact_immediate LOCATION_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME interact TARGET_NAME",
+            value: "character CHARACTER_NAME interact TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME follow TARGET_NAME",
+            value: "character CHARACTER_NAME follow TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME stop follow",
+            value: "character CHARACTER_NAME stop follow",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME hold ITEM_NAME",
+            value: "character CHARACTER_NAME hold ITEM_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME place ITEM_NAME POSITION",
+            value: "character CHARACTER_NAME place ITEM_NAME POSITION",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME hide",
+            value: "character CHARACTER_NAME hide",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME show",
+            value: "character CHARACTER_NAME show",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME set_layer LAYER_NUM",
+            value: "character CHARACTER_NAME set_layer LAYER_NUM",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME look LOCATION_NAME",
+            value: "character CHARACTER_NAME look LOCATION_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME ondestination",
+            value: "character CHARACTER_NAME ondestination",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME point right TARGET_NAME",
+            value: "character CHARACTER_NAME point right TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME point_left TARGET_NAME",
+            value: "character CHARACTER_NAME point_left TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME position LOCATION_NAME",
+            value: "character CHARACTER_NAME position LOCATION_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME position_offset OFFSET_X OFFSET_Y",
+            value: "character CHARACTER_NAME position_offset OFFSET_X OFFSET_Y",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME position_relative_offset TARGET_POSITION_NAME OFFSET_X OFFSET_Y",
+            value: "character CHARACTER_NAME position_relative_offset TARGET_POSITION_NAME OFFSET_X OFFSET_Y",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME reset",
+            value: "character CHARACTER_NAME reset",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME run_speed SPEED",
+            value: "character CHARACTER_NAME run_speed SPEED",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME run_to LOCATION_NAME",
+            value: "character CHARACTER_NAME run_to LOCATION_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME stop",
+            value: "character CHARACTER_NAME stop",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME turn around",
+            value: "character CHARACTER_NAME turn around",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME turn LOCATION_NAME",
+            value: "character CHARACTER_NAME turn LOCATION_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME throw ITEM_NAME TARGET on destination ON_DESTINATION",
+            value: "character CHARACTER_NAME throw ITEM_NAME TARGET on destination ON_DESTINATION",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME blink",
+            value: "character CHARACTER_NAME blink",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME blink_rapid",
+            value: "character CHARACTER_NAME blink_rapid",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME set_outfit OUTFIT_NAME",
+            value: "character CHARACTER_NAME set_outfit OUTFIT_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME close_eyes",
+            value: "character CHARACTER_NAME close_eyes",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME set_sprite BODY_PART_NAME SPRITE_NAME",
+            value: "character CHARACTER_NAME set_sprite BODY_PART_NAME SPRITE_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME open_eyes",
+            value: "character CHARACTER_NAME open_eyes",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME quick_point_left TARGET_NAME",
+            value: "character CHARACTER_NAME quick_point_left TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME quick_point_right TARGET_NAME",
+            value: "character CHARACTER_NAME quick_point_right TARGET_NAME",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME walk_speed SPEED",
+            value: "character CHARACTER_NAME walk_speed SPEED",
+            meta: "Character Command",
+        },{
+        caption: "character CHARACTER_NAME walk_to LOCATION_NAME",
+            value: "character CHARACTER_NAME walk_to LOCATION_NAME",
             meta: "Character Command",
         },
+
+
 
         // Characters
         {
@@ -304,6 +903,11 @@ function getAllCommandSuggestions(inkFiles) {
             meta: "Character",
         },
 
+
+
+
+
+
         // Locations
         {
         caption: "l_charlie_hallway",
@@ -374,6 +978,8 @@ function getAllCommandSuggestions(inkFiles) {
             value: "l_school_outside",
             meta: "Location",
         },
+
+
 
 
         // Positions
@@ -2030,6 +2636,728 @@ function getAllCommandSuggestions(inkFiles) {
             value: "lp_school_outside.none",
             meta: "Position",
         },
+
+
+
+
+
+        // Unlocks
+
+        {
+        caption: "u_charlie_hallway.lights_on",
+            value: "u_charlie_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_hallway.lights_off",
+            value: "u_charlie_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_hallway.light_stairway_on",
+            value: "u_charlie_hallway.light_stairway_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_hallway.light_stairway_off",
+            value: "u_charlie_hallway.light_stairway_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_hallway.light_ceiling_on",
+            value: "u_charlie_hallway.light_ceiling_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_hallway.light_ceiling_off",
+            value: "u_charlie_hallway.light_ceiling_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.daytime",
+            value: "u_charlie_house.daytime",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.fridge_open",
+            value: "u_charlie_house.fridge_open",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.fridge_open_slow",
+            value: "u_charlie_house.fridge_open_slow",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.fridge_close",
+            value: "u_charlie_house.fridge_close",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.fridge_close_fast",
+            value: "u_charlie_house.fridge_close_fast",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.tv_on",
+            value: "u_charlie_house.tv_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.tv_off",
+            value: "u_charlie_house.tv_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.lights_on",
+            value: "u_charlie_house.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.lights_off",
+            value: "u_charlie_house.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.light_left_on",
+            value: "u_charlie_house.light_left_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.light_left_off",
+            value: "u_charlie_house.light_left_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.light_right_on",
+            value: "u_charlie_house.light_right_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house.light_right_off",
+            value: "u_charlie_house.light_right_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.lights_on",
+            value: "u_charlie_house_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.lights_off",
+            value: "u_charlie_house_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.light_stairway_on",
+            value: "u_charlie_house_hallway.light_stairway_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.light_stairway_off",
+            value: "u_charlie_house_hallway.light_stairway_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.light_ceiling_on",
+            value: "u_charlie_house_hallway.light_ceiling_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_house_hallway.light_ceiling_off",
+            value: "u_charlie_house_hallway.light_ceiling_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.lights_on",
+            value: "u_charlie_room.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.lights_off",
+            value: "u_charlie_room.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.lamp_on",
+            value: "u_charlie_room.lamp_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.lamp_off",
+            value: "u_charlie_room.lamp_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.ceiling_light_on",
+            value: "u_charlie_room.ceiling_light_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlie_room.ceiling_light_off",
+            value: "u_charlie_room.ceiling_light_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.lights_on",
+            value: "u_charlies_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.lights_off",
+            value: "u_charlies_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.light_stairway_on",
+            value: "u_charlies_hallway.light_stairway_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.light_stairway_off",
+            value: "u_charlies_hallway.light_stairway_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.light_ceiling_on",
+            value: "u_charlies_hallway.light_ceiling_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_hallway.light_ceiling_off",
+            value: "u_charlies_hallway.light_ceiling_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.daytime",
+            value: "u_charlies_house.daytime",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.fridge_open",
+            value: "u_charlies_house.fridge_open",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.fridge_open_slow",
+            value: "u_charlies_house.fridge_open_slow",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.fridge_close",
+            value: "u_charlies_house.fridge_close",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.fridge_close_fast",
+            value: "u_charlies_house.fridge_close_fast",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.tv_on",
+            value: "u_charlies_house.tv_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.tv_off",
+            value: "u_charlies_house.tv_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.lights_on",
+            value: "u_charlies_house.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.lights_off",
+            value: "u_charlies_house.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.light_left_on",
+            value: "u_charlies_house.light_left_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.light_left_off",
+            value: "u_charlies_house.light_left_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.light_right_on",
+            value: "u_charlies_house.light_right_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house.light_right_off",
+            value: "u_charlies_house.light_right_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.lights_on",
+            value: "u_charlies_house_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.lights_off",
+            value: "u_charlies_house_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.light_stairway_on",
+            value: "u_charlies_house_hallway.light_stairway_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.light_stairway_off",
+            value: "u_charlies_house_hallway.light_stairway_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.light_ceiling_on",
+            value: "u_charlies_house_hallway.light_ceiling_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_house_hallway.light_ceiling_off",
+            value: "u_charlies_house_hallway.light_ceiling_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.lights_on",
+            value: "u_charlies_room.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.lights_off",
+            value: "u_charlies_room.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.lamp_on",
+            value: "u_charlies_room.lamp_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.lamp_off",
+            value: "u_charlies_room.lamp_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.ceiling_light_on",
+            value: "u_charlies_room.ceiling_light_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_charlies_room.ceiling_light_off",
+            value: "u_charlies_room.ceiling_light_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_classroom.lights_on",
+            value: "u_classroom.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_classroom.lights_off",
+            value: "u_classroom.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.lights_on",
+            value: "u_house_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.lights_off",
+            value: "u_house_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.light_stairway_on",
+            value: "u_house_hallway.light_stairway_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.light_stairway_off",
+            value: "u_house_hallway.light_stairway_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.light_ceiling_on",
+            value: "u_house_hallway.light_ceiling_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_house_hallway.light_ceiling_off",
+            value: "u_house_hallway.light_ceiling_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.daytime",
+            value: "u_living_room.daytime",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.fridge_open",
+            value: "u_living_room.fridge_open",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.fridge_open_slow",
+            value: "u_living_room.fridge_open_slow",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.fridge_close",
+            value: "u_living_room.fridge_close",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.fridge_close_fast",
+            value: "u_living_room.fridge_close_fast",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.tv_on",
+            value: "u_living_room.tv_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.tv_off",
+            value: "u_living_room.tv_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.lights_on",
+            value: "u_living_room.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.lights_off",
+            value: "u_living_room.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.light_left_on",
+            value: "u_living_room.light_left_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.light_left_off",
+            value: "u_living_room.light_left_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.light_right_on",
+            value: "u_living_room.light_right_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_living_room.light_right_off",
+            value: "u_living_room.light_right_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.lights_on",
+            value: "u_school_hallway.lights_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.lights_off",
+            value: "u_school_hallway.lights_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.light_left_on",
+            value: "u_school_hallway.light_left_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.light_left_off",
+            value: "u_school_hallway.light_left_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.light_right_on",
+            value: "u_school_hallway.light_right_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_school_hallway.light_right_off",
+            value: "u_school_hallway.light_right_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_off",
+            value: "u_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_on",
+            value: "u_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_off",
+            value: "u_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_on",
+            value: "u_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_off",
+            value: "u_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_on",
+            value: "u_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_tips_show",
+            value: "u_combat_tips_show",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_tips_hide",
+            value: "u_combat_tips_hide",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_off",
+            value: "u_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_on",
+            value: "u_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_off",
+            value: "u_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_on",
+            value: "u_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_off",
+            value: "u_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_on",
+            value: "u_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_hide_chained_riley",
+            value: "u_hide_chained_riley",
+            meta: "Unlock Action",
+        },{
+        caption: "u_ch2_door_basement",
+            value: "u_ch2_door_basement",
+            meta: "Unlock Action",
+        },{
+        caption: "u_final_slide",
+            value: "u_final_slide",
+            meta: "Unlock Action",
+        },{
+        caption: "u_add_star ",
+            value: "u_add_star ",
+            meta: "Unlock Action",
+        },{
+        caption: "u_remove_star ",
+            value: "u_remove_star ",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_on",
+            value: "u_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_off",
+            value: "u_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_on",
+            value: "u_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_off",
+            value: "u_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_on",
+            value: "u_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_off",
+            value: "u_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_off",
+            value: "u_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_on",
+            value: "u_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_off",
+            value: "u_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_skills_guide_off",
+            value: "u_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_off",
+            value: "u_riley_move_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_block_run",
+            value: "u_combat_block_run",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_off",
+            value: "u_riley_skills_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_off",
+            value: "u_riley_run_guide_off",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_move_guide_on",
+            value: "u_riley_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_run_guide_on",
+            value: "u_riley_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_skills_guide_on",
+            value: "u_riley_skills_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_move_guide_on",
+            value: "u_move_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_run_guide_on",
+            value: "u_run_guide_on",
+            meta: "Unlock Action",
+        },{
+        caption: "u_riley_chained_flipx",
+            value: "u_riley_chained_flipx",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_tips_hide",
+            value: "u_combat_tips_hide",
+            meta: "Unlock Action",
+        },{
+        caption: "u_combat_tips_show",
+            value: "u_combat_tips_show",
+            meta: "Unlock Action",
+        },
+
+
+
+
+
+
+
+
+
+
 
 
 
