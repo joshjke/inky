@@ -849,7 +849,6 @@ img.issue-icon.warning {
 #goto-anything ul.results {
   max-height: 400px;
   overflow-y: scroll;
-  overflow-x: scroll;
   list-style: none;
   -webkit-padding-start: 0;
   margin-left: 10px;

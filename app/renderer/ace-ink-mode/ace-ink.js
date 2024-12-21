@@ -225,6 +225,8 @@ var inkHighlightRules = function() {
             }, {
                 include: "#logicLineInsert"
             }, {
+                include: "#tagLineInsert"
+            }, {
                 regex: /(\(\s*)(\w+)(\s*\)\s*)/,
                 token: [
                     "gather.label",      // (
@@ -484,9 +486,11 @@ var inkHighlightRules = function() {
                 defaultToken: "command"
             }]
         }],
+        // /^(\s*)(\/)(\s*)(\w+)/
+
         "#tagsInsert": [{
-            //regex: /(\/)(\s*)(\w+)/,
-            regex: /#[^\[\]$]+/,
+            regex: /(\#)(\s*)(\w+)/,
+            //regex: /#[^\[\]$]+/,
             token: [
                 "command.slash",  // /
                 "command", // optional space
@@ -494,10 +498,11 @@ var inkHighlightRules = function() {
             ],
             push: [{
                 token: "command",
-                regex: /#[^\[\]$]+/,
+                regex: /$/,
+                //regex: /#[^\[\]$]+/,
                 next: "pop"
             }, {
-                regex: /(s+)(w+)/,
+                regex: /(\#)(\s*)(\w+)/,
                 token: [
                     "command",
                     "command.option"
@@ -574,7 +579,7 @@ var inkHighlightRules = function() {
         }, {
             include: "#logicLine"
         }, {
-            include: "#commandLine"
+            include: "#tags"
         }, {
             include: "#mixedContent"
         }, {

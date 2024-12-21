@@ -208,8 +208,7 @@ InkProject.prototype.startFileWatching = function() {
     });
 
     const isInkFile = fileAbsPath => {
-        var fileName = fileAbsPath.split('\\').pop().split('/').pop()
-        return !fileName.includes('.') || fileName.split(".").pop() == "ink";
+         return fileAbsPath.split(".").pop() == "ink";
     };
 
     const tryUpdateSettingsFile = fileAbsPath => {
