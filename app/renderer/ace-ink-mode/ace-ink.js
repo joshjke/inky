@@ -457,35 +457,33 @@ var inkHighlightRules = function() {
                 defaultToken: "logic.tilda"
             }]
         }],
-        "#tags": [{
-            regex: /#[^\[\]$]+/,
-            token: [
-                "command", // optional space
-                "command.slash",  // /
-                "command", // optional space
-                "command"   // command_name
-            ],
-            push: [{
-                token: "command",
-                regex: /#[^\[\]$]+/,
-                //regex: /$/,
-                next: "pop"
-            }, {
-                regex: /(s+)(w+)/,
-                token: [
-                    "command",
-                    "command.option"
-                ]
-            }, {
-                include: "#escapes"
-            }, {
-                include: "#comments"
-            }, { 
-                include: "#inlineContent" 
-            }, {
-                defaultToken: "command"
-            }]
-        }],
+"#tags": [{
+    regex: /#[^\[\]\r\n]+/,
+    token: "command",
+    push: [{
+        token: "command",
+        regex: /$/,
+        next: "pop"
+    }, {
+        // Add this rule to handle non-tag lines
+        regex: /^(?!#)/,  // If line doesn't start with #, pop back
+        token: "",
+        next: "pop"
+    }, {
+        regex: /(\#)(\s*)(\w+)/,
+        token: [
+            "command.slash",
+            "command",
+            "command.option"
+        ]
+    }, {
+        include: "#escapes"
+    }, {
+        include: "#comments"
+    }, {
+        defaultToken: "command"
+    }]
+}],
         // /^(\s*)(\/)(\s*)(\w+)/
 
         "#tagsInsert": [{
